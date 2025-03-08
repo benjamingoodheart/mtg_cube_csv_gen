@@ -1,14 +1,13 @@
-import requests
-import json
+from utils import cube_driver
 
-url = 'https://api.scryfall.com/cards/search?q=ons'
-headers = {'user-agent': 'bg-dev-cube-gen-app'}
+c = cube_driver.CubeDriver('ons')
+for o in c.search_obj:
+    print(o)
+c.set_url(c.search_obj["next_page"])
+c.set_next_page_obj()
 
-r = requests.get(url, headers=headers)
-obj = r.json()
 
-print(obj["total_cards"])
-has_more = obj["has_more"]
+'''has_more = obj["has_more"]
 print(obj["next_page"])
 
 total_cards = obj["total_cards"]
@@ -25,3 +24,4 @@ if has_more == True:
     print("we'll repeat")
     print(f'we still have {total_cards - cards_printed}  cards to go')
 
+'''
