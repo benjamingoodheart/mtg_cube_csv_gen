@@ -1,0 +1,352 @@
+card_name,collector_num,colors,rarity,desired_qty,owned,qty_owned
+Akroma's Blessing,1,['W'],uncommon,3,N,0
+Akroma's Vengeance,2,['W'],rare,1,N,0
+Ancestor's Prophet,3,['W'],rare,1,N,0
+Astral Slide,4,['W'],uncommon,3,N,0
+Aura Extraction,5,['W'],uncommon,3,N,0
+Aurification,6,['W'],rare,1,N,0
+Aven Brigadier,7,['W'],rare,1,N,0
+Aven Soulgazer,8,['W'],uncommon,3,N,0
+Battlefield Medic,9,['W'],common,4,N,0
+Catapult Master,10,['W'],rare,1,N,0
+Catapult Squad,11,['W'],uncommon,3,N,0
+Chain of Silence,12,['W'],uncommon,3,N,0
+Circle of Solace,13,['W'],rare,1,N,0
+Convalescent Care,14,['W'],rare,1,N,0
+Crowd Favorites,15,['W'],uncommon,3,N,0
+Crown of Awe,16,['W'],common,4,N,0
+Crude Rampart,17,['W'],uncommon,3,N,0
+Daru Cavalier,18,['W'],common,4,N,0
+Daru Healer,19,['W'],common,4,N,0
+Daru Lancer,20,['W'],common,4,N,0
+Daunting Defender,21,['W'],common,4,N,0
+Dawning Purist,22,['W'],uncommon,3,N,0
+Defensive Maneuvers,23,['W'],common,4,N,0
+Demystify,24,['W'],common,4,N,0
+Disciple of Grace,25,['W'],common,4,N,0
+Dive Bomber,26,['W'],common,4,N,0
+Doubtless One,27,['W'],uncommon,3,N,0
+Exalted Angel,28,['W'],rare,1,N,0
+Foothill Guide,29,['W'],common,4,N,0
+Glarecaster,30,['W'],rare,1,N,0
+Glory Seeker,31,['W'],common,4,N,0
+Grassland Crusader,32,['W'],common,4,N,0
+Gravel Slinger,33,['W'],common,4,N,0
+Gustcloak Harrier,34,['W'],common,4,N,0
+Gustcloak Runner,35,['W'],common,4,N,0
+Gustcloak Savior,36,['W'],rare,1,N,0
+Gustcloak Sentinel,37,['W'],uncommon,3,N,0
+Gustcloak Skirmisher,38,['W'],uncommon,3,N,0
+Harsh Mercy,39,['W'],rare,1,N,0
+Improvised Armor,40,['W'],uncommon,3,N,0
+Inspirit,41,['W'],uncommon,3,N,0
+Ironfist Crusher,42,['W'],uncommon,3,N,0
+"Jareth, Leonine Titan",43,['W'],rare,1,N,0
+Mobilization,44,['W'],rare,1,N,0
+Nova Cleric,45,['W'],uncommon,3,N,0
+Oblation,46,['W'],rare,1,N,0
+Pacifism,47,['W'],common,4,N,0
+Pearlspear Courier,48,['W'],uncommon,3,N,0
+Piety Charm,49,['W'],common,4,N,0
+Renewed Faith,50,['W'],common,4,N,0
+Righteous Cause,51,['W'],uncommon,3,N,0
+Sandskin,52,['W'],common,4,N,0
+Shared Triumph,53,['W'],rare,1,N,0
+Shieldmage Elder,54,['W'],uncommon,3,N,0
+Sigil of the New Dawn,55,['W'],rare,1,N,0
+Sunfire Balm,56,['W'],uncommon,3,N,0
+True Believer,57,['W'],rare,1,N,0
+Unified Strike,58,['W'],common,4,N,0
+Weathered Wayfarer,59,['W'],rare,1,N,0
+Whipcorder,60,['W'],uncommon,3,N,0
+Words of Worship,61,['W'],rare,1,N,0
+Airborne Aid,62,['U'],common,4,N,0
+Annex,63,['U'],uncommon,3,N,0
+Aphetto Alchemist,64,['U'],uncommon,3,N,0
+Aphetto Grifter,65,['U'],uncommon,3,N,0
+Arcanis the Omnipotent,66,['U'],rare,1,N,0
+Artificial Evolution,67,['U'],rare,1,N,0
+Ascending Aven,68,['U'],common,4,N,0
+Aven Fateshaper,69,['U'],uncommon,3,N,0
+Backslide,70,['U'],common,4,N,0
+Blatant Thievery,71,['U'],rare,1,N,0
+Callous Oppressor,72,['U'],rare,1,N,0
+Chain of Vapor,73,['U'],uncommon,3,N,0
+Choking Tethers,74,['U'],common,4,N,0
+Clone,75,['U'],rare,1,N,0
+Complicate,76,['U'],uncommon,3,N,0
+Crafty Pathmage,77,['U'],common,4,N,0
+Crown of Ascension,78,['U'],common,4,N,0
+Discombobulate,79,['U'],uncommon,3,N,0
+Dispersing Orb,80,['U'],uncommon,3,N,0
+Disruptive Pitmage,81,['U'],common,4,N,0
+Essence Fracture,82,['U'],uncommon,3,N,0
+Fleeting Aven,83,['U'],uncommon,3,N,0
+Future Sight,84,['U'],rare,1,N,0
+Ghosthelm Courier,85,['U'],uncommon,3,N,0
+Graxiplon,86,['U'],uncommon,3,N,0
+Imagecrafter,87,['U'],common,4,N,0
+Information Dealer,88,['U'],common,4,N,0
+"Ixidor, Reality Sculptor",89,['U'],rare,1,N,0
+Ixidor's Will,90,['U'],common,4,N,0
+Mage's Guile,91,['U'],common,4,N,0
+Meddle,92,['U'],uncommon,3,N,0
+Mistform Dreamer,93,['U'],common,4,N,0
+Mistform Mask,94,['U'],common,4,N,0
+Mistform Mutant,95,['U'],uncommon,3,N,0
+Mistform Shrieker,96,['U'],uncommon,3,N,0
+Mistform Skyreaver,97,['U'],rare,1,N,0
+Mistform Stalker,98,['U'],uncommon,3,N,0
+Mistform Wall,99,['U'],common,4,N,0
+Nameless One,100,['U'],uncommon,3,N,0
+Peer Pressure,101,['U'],rare,1,N,0
+Psychic Trance,102,['U'],rare,1,N,0
+Quicksilver Dragon,103,['U'],rare,1,N,0
+Read the Runes,104,['U'],rare,1,N,0
+Reminisce,105,['U'],uncommon,3,N,0
+Riptide Biologist,106,['U'],common,4,N,0
+Riptide Chronologist,107,['U'],uncommon,3,N,0
+Riptide Entrancer,108,['U'],rare,1,N,0
+Riptide Shapeshifter,109,['U'],uncommon,3,N,0
+Rummaging Wizard,110,['U'],uncommon,3,N,0
+Sage Aven,111,['U'],common,4,N,0
+Screaming Seahawk,112,['U'],common,4,N,0
+Sea's Claim,113,['U'],common,4,N,0
+Slipstream Eel,114,['U'],common,4,N,0
+Spy Network,115,['U'],common,4,N,0
+Standardize,116,['U'],rare,1,N,0
+Supreme Inquisitor,117,['U'],rare,1,N,0
+Trade Secrets,118,['U'],rare,1,N,0
+Trickery Charm,119,['U'],common,4,N,0
+Voidmage Prodigy,120,['U'],rare,1,N,0
+Wheel and Deal,121,['U'],rare,1,N,0
+Words of Wind,122,['U'],rare,1,N,0
+Accursed Centaur,123,['B'],common,4,N,0
+Anurid Murkdiver,124,['B'],common,4,N,0
+Aphetto Dredging,125,['B'],common,4,N,0
+Aphetto Vulture,126,['B'],uncommon,3,N,0
+Blackmail,127,['B'],uncommon,3,N,0
+Boneknitter,128,['B'],uncommon,3,N,0
+Cabal Archon,129,['B'],uncommon,3,N,0
+Cabal Executioner,130,['B'],uncommon,3,N,0
+Cabal Slaver,131,['B'],uncommon,3,N,0
+Chain of Smog,132,['B'],uncommon,3,N,0
+Cover of Darkness,133,['B'],rare,1,N,0
+Crown of Suspicion,134,['B'],common,4,N,0
+Cruel Revival,135,['B'],common,4,N,0
+Death Match,136,['B'],rare,1,N,0
+Death Pulse,137,['B'],uncommon,3,N,0
+Dirge of Dread,138,['B'],common,4,N,0
+Disciple of Malice,139,['B'],common,4,N,0
+Doomed Necromancer,140,['B'],rare,1,N,0
+Ebonblade Reaper,141,['B'],rare,1,N,0
+Endemic Plague,142,['B'],rare,1,N,0
+Entrails Feaster,143,['B'],rare,1,N,0
+Fade from Memory,144,['B'],uncommon,3,N,0
+Fallen Cleric,145,['B'],common,4,N,0
+False Cure,146,['B'],rare,1,N,0
+Feeding Frenzy,147,['B'],uncommon,3,N,0
+Festering Goblin,148,['B'],common,4,N,0
+Frightshroud Courier,149,['B'],uncommon,3,N,0
+Gangrenous Goliath,150,['B'],rare,1,N,0
+Gluttonous Zombie,151,['B'],uncommon,3,N,0
+Gravespawn Sovereign,152,['B'],rare,1,N,0
+Grinning Demon,153,['B'],rare,1,N,0
+Haunted Cadaver,154,['B'],common,4,N,0
+Head Games,155,['B'],rare,1,N,0
+Headhunter,156,['B'],uncommon,3,N,0
+Infest,157,['B'],uncommon,3,N,0
+Misery Charm,158,['B'],common,4,N,0
+Nantuko Husk,159,['B'],common,4,N,0
+Oversold Cemetery,160,['B'],rare,1,N,0
+Patriarch's Bidding,161,['B'],rare,1,N,0
+Profane Prayers,162,['B'],common,4,N,0
+Prowling Pangolin,163,['B'],uncommon,3,N,0
+Rotlung Reanimator,164,['B'],rare,1,N,0
+Screeching Buzzard,165,['B'],common,4,N,0
+Severed Legion,166,['B'],common,4,N,0
+Shade's Breath,167,['B'],uncommon,3,N,0
+Shepherd of Rot,168,['B'],common,4,N,0
+Silent Specter,169,['B'],rare,1,N,0
+Smother,170,['B'],uncommon,3,N,0
+Soulless One,171,['B'],uncommon,3,N,0
+Spined Basher,172,['B'],common,4,N,0
+Strongarm Tactics,173,['B'],rare,1,N,0
+Swat,174,['B'],common,4,N,0
+Syphon Mind,175,['B'],common,4,N,0
+Syphon Soul,176,['B'],common,4,N,0
+Thrashing Mudspawn,177,['B'],uncommon,3,N,0
+Undead Gladiator,178,['B'],rare,1,N,0
+Visara the Dreadful,179,['B'],rare,1,N,0
+Walking Desecration,180,['B'],uncommon,3,N,0
+Withering Hex,181,['B'],uncommon,3,N,0
+Words of Waste,182,['B'],rare,1,N,0
+Wretched Anurid,183,['B'],common,4,N,0
+Aether Charge,184,['R'],uncommon,3,N,0
+Aggravated Assault,185,['R'],rare,1,N,0
+Airdrop Condor,186,['R'],uncommon,3,N,0
+Avarax,187,['R'],uncommon,3,N,0
+Battering Craghorn,188,['R'],common,4,N,0
+Blistering Firecat,189,['R'],rare,1,N,0
+Break Open,190,['R'],common,4,N,0
+Brightstone Ritual,191,['R'],common,4,N,0
+Butcher Orgg,192,['R'],rare,1,N,0
+Chain of Plasma,193,['R'],uncommon,3,N,0
+Charging Slateback,194,['R'],common,4,N,0
+Commando Raid,195,['R'],uncommon,3,N,0
+Crown of Fury,196,['R'],common,4,N,0
+Custody Battle,197,['R'],uncommon,3,N,0
+Dragon Roost,198,['R'],rare,1,N,0
+Dwarven Blastminer,199,['R'],uncommon,3,N,0
+Embermage Goblin,200,['R'],uncommon,3,N,0
+Embermage Goblin,200★,['R'],uncommon,3,N,0
+Erratic Explosion,201,['R'],common,4,N,0
+Fever Charm,202,['R'],common,4,N,0
+Flamestick Courier,203,['R'],uncommon,3,N,0
+Goblin Machinist,204,['R'],uncommon,3,N,0
+Goblin Piledriver,205,['R'],rare,1,N,0
+Goblin Pyromancer,206,['R'],rare,1,N,0
+Goblin Sharpshooter,207,['R'],rare,1,N,0
+Goblin Sky Raider,208,['R'],common,4,N,0
+Goblin Sledder,209,['R'],common,4,N,0
+Goblin Taskmaster,210,['R'],common,4,N,0
+Grand Melee,211,['R'],rare,1,N,0
+Gratuitous Violence,212,['R'],rare,1,N,0
+Insurrection,213,['R'],rare,1,N,0
+Kaboom!,214,['R'],rare,1,N,0
+Lavamancer's Skill,215,['R'],common,4,N,0
+Lay Waste,216,['R'],common,4,N,0
+Lightning Rift,217,['R'],uncommon,3,N,0
+Mana Echoes,218,['R'],rare,1,N,0
+Menacing Ogre,219,['R'],rare,1,N,0
+Nosy Goblin,220,['R'],common,4,N,0
+Pinpoint Avalanche,221,['R'],common,4,N,0
+Reckless One,222,['R'],uncommon,3,N,0
+Risky Move,223,['R'],rare,1,N,0
+Rorix Bladewing,224,['R'],rare,1,N,0
+Searing Flesh,225,['R'],uncommon,3,N,0
+Shaleskin Bruiser,226,['R'],uncommon,3,N,0
+Shock,227,['R'],common,4,N,0
+Skirk Commando,228,['R'],common,4,N,0
+Skirk Fire Marshal,229,['R'],rare,1,N,0
+Skirk Prospector,230,['R'],common,4,N,0
+Skittish Valesk,231,['R'],uncommon,3,N,0
+Slice and Dice,232,['R'],uncommon,3,N,0
+Snapping Thragg,233,['R'],uncommon,3,N,0
+Solar Blast,234,['R'],common,4,N,0
+Sparksmith,235,['R'],common,4,N,0
+Spitfire Handler,236,['R'],uncommon,3,N,0
+Spurred Wolverine,237,['R'],common,4,N,0
+Starstorm,238,['R'],rare,1,N,0
+Tephraderm,239,['R'],rare,1,N,0
+Thoughtbound Primoc,240,['R'],uncommon,3,N,0
+Threaten,241,['R'],uncommon,3,N,0
+Thunder of Hooves,242,['R'],uncommon,3,N,0
+Wave of Indifference,243,['R'],common,4,N,0
+Words of War,244,['R'],rare,1,N,0
+Animal Magnetism,245,['G'],rare,1,N,0
+Barkhide Mauler,246,['G'],common,4,N,0
+Biorhythm,247,['G'],rare,1,N,0
+Birchlore Rangers,248,['G'],common,4,N,0
+Bloodline Shaman,249,['G'],uncommon,3,N,0
+Broodhatch Nantuko,250,['G'],uncommon,3,N,0
+Centaur Glade,251,['G'],uncommon,3,N,0
+Chain of Acid,252,['G'],uncommon,3,N,0
+Crown of Vigor,253,['G'],common,4,N,0
+Elven Riders,254,['G'],uncommon,3,N,0
+Elvish Guidance,255,['G'],common,4,N,0
+Elvish Pathcutter,256,['G'],common,4,N,0
+Elvish Pioneer,257,['G'],common,4,N,0
+Elvish Scrapper,258,['G'],uncommon,3,N,0
+Elvish Vanguard,259,['G'],rare,1,N,0
+Elvish Warrior,260,['G'],common,4,N,0
+Enchantress's Presence,261,['G'],rare,1,N,0
+Everglove Courier,262,['G'],uncommon,3,N,0
+Explosive Vegetation,263,['G'],uncommon,3,N,0
+Gigapede,264,['G'],rare,1,N,0
+Heedless One,265,['G'],uncommon,3,N,0
+Hystrodon,266,['G'],rare,1,N,0
+Invigorating Boon,267,['G'],uncommon,3,N,0
+"Kamahl, Fist of Krosa",268,['G'],rare,1,N,0
+Kamahl's Summons,269,['G'],uncommon,3,N,0
+Krosan Colossus,270,['G'],rare,1,N,0
+Krosan Groundshaker,271,['G'],uncommon,3,N,0
+Krosan Tusker,272,['G'],common,4,N,0
+Leery Fogbeast,273,['G'],common,4,N,0
+Mythic Proportions,274,['G'],rare,1,N,0
+Naturalize,275,['G'],common,4,N,0
+Overwhelming Instinct,276,['G'],uncommon,3,N,0
+Primal Boost,277,['G'],uncommon,3,N,0
+Ravenous Baloth,278,['G'],rare,1,N,0
+Run Wild,279,['G'],uncommon,3,N,0
+Serpentine Basilisk,280,['G'],uncommon,3,N,0
+Silklash Spider,281,['G'],rare,1,N,0
+"Silvos, Rogue Elemental",282,['G'],rare,1,N,0
+Snarling Undorak,283,['G'],common,4,N,0
+Spitting Gourna,284,['G'],common,4,N,0
+Stag Beetle,285,['G'],rare,1,N,0
+Steely Resolve,286,['G'],rare,1,N,0
+Symbiotic Beast,287,['G'],uncommon,3,N,0
+Symbiotic Elf,288,['G'],common,4,N,0
+Symbiotic Wurm,289,['G'],rare,1,N,0
+Taunting Elf,290,['G'],common,4,N,0
+Tempting Wurm,291,['G'],rare,1,N,0
+Towering Baloth,292,['G'],uncommon,3,N,0
+Treespring Lorian,293,['G'],common,4,N,0
+Tribal Unity,294,['G'],uncommon,3,N,0
+Venomspout Brackus,295,['G'],uncommon,3,N,0
+Vitality Charm,296,['G'],common,4,N,0
+Voice of the Woods,297,['G'],rare,1,N,0
+Wall of Mulch,298,['G'],uncommon,3,N,0
+Weird Harvest,299,['G'],rare,1,N,0
+Wellwisher,300,['G'],common,4,N,0
+Wirewood Elf,301,['G'],common,4,N,0
+Wirewood Herald,302,['G'],common,4,N,0
+Wirewood Pride,303,['G'],common,4,N,0
+Wirewood Savage,304,['G'],common,4,N,0
+Words of Wilding,305,['G'],rare,1,N,0
+Cryptic Gateway,306,['C'],rare,1,N,0
+Doom Cannon,307,['C'],rare,1,N,0
+Dream Chisel,308,['C'],rare,1,N,0
+Riptide Replicator,309,['C'],rare,1,N,0
+Slate of Ancestry,310,['C'],rare,1,N,0
+Tribal Golem,311,['C'],rare,1,N,0
+Barren Moor,312,['C'],common,4,N,0
+Bloodstained Mire,313,['C'],rare,1,N,0
+Contested Cliffs,314,['C'],rare,1,N,0
+Daru Encampment,315,['C'],uncommon,3,N,0
+Flooded Strand,316,['C'],rare,1,N,0
+Forgotten Cave,317,['C'],common,4,N,0
+Goblin Burrows,318,['C'],uncommon,3,N,0
+Grand Coliseum,319,['C'],rare,1,N,0
+Lonely Sandbar,320,['C'],common,4,N,0
+Polluted Delta,321,['C'],rare,1,N,0
+Riptide Laboratory,322,['C'],rare,1,N,0
+Seaside Haven,323,['C'],uncommon,3,N,0
+Secluded Steppe,324,['C'],common,4,N,0
+Starlit Sanctum,325,['C'],uncommon,3,N,0
+Tranquil Thicket,326,['C'],common,4,N,0
+Unholy Grotto,327,['C'],rare,1,N,0
+Windswept Heath,328,['C'],rare,1,N,0
+Wirewood Lodge,329,['C'],uncommon,3,N,0
+Wooded Foothills,330,['C'],rare,1,N,0
+Plains,331,['C'],common,4,N,0
+Plains,332,['C'],common,4,N,0
+Plains,333,['C'],common,4,N,0
+Plains,334,['C'],common,4,N,0
+Island,335,['C'],common,4,N,0
+Island,336,['C'],common,4,N,0
+Island,337,['C'],common,4,N,0
+Island,338,['C'],common,4,N,0
+Swamp,339,['C'],common,4,N,0
+Swamp,340,['C'],common,4,N,0
+Swamp,341,['C'],common,4,N,0
+Swamp,342,['C'],common,4,N,0
+Mountain,343,['C'],common,4,N,0
+Mountain,344,['C'],common,4,N,0
+Mountain,345,['C'],common,4,N,0
+Mountain,346,['C'],common,4,N,0
+Forest,347,['C'],common,4,N,0
+Forest,348,['C'],common,4,N,0
+Forest,349,['C'],common,4,N,0
+Forest,350,['C'],common,4,N,0

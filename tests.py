@@ -1,6 +1,6 @@
 import unittest
-from utils import cube_driver
-
+from utils import cube_driver, cli_util
+import csv
 
 
 class TestDriver(unittest.TestCase):
@@ -18,7 +18,7 @@ class TestDriver(unittest.TestCase):
     
     def test_get_json_data(self):
         c = cube_driver.CubeDriver('ons')
-        print(c.get_json())
+        self.assertGreater(len(c.get_json_data()), 0)
         
 class TestsDriverTwo(unittest.TestCase):
     def setUp(self):
@@ -26,17 +26,65 @@ class TestsDriverTwo(unittest.TestCase):
     
     def test_driver(self):
         self.c.add_cards()
-        
-    
-        print(self.c.search_obj["has_more"])
         while self.c.has_more() is True:
             self.c.set_url(self.c.search_obj["next_page"])
             self.c.set_next_page_obj()
             self.c.add_cards()
-            print(self.c.cards)
-
         
-        self.assertGreater(len(self.c.cards), self.c.get_total_cards())
+        self.assertEqual(len(self.c.cards) - 1, self.c.get_total_cards())
+        
+        
+    def test_calc_qty(self):
+        assert self.c.calc_desired_qty("common") == 4
+        assert self.c.calc_desired_qty("uncommon") == 3
+        assert self.c.calc_desired_qty("rare") == 1
+        assert self.c.calc_desired_qty("mythic") == 1
+        assert self.c.calc_desired_qty("promo") == 0
+    
+    def test_csv_write(self):
+        self.c.add_all_cards()
+        self.c.write_csv()
+        
+        with open('ons_cards.csv', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            limit = 5
+            cnt = 0
+            for row in reader:
+                cnt +=1
+                if cnt <= limit:
+                    print(row)
+                else:
+                    pass
+
+class TestCLIUtil(unittest.TestCase):
+    def test_good_set(self):
+        cli = cli_util.CLIUtil()
+        self.assertIs(cli.validate_set_code("ONS"), True)
+    
+    def test_bad_set(self):
+        cli = cli_util.CLIUtil()
+        cli
+        self.assertRaises(Exception)
+        
+        cli._set_set_code('a')
+        self.assertRaises(Exception)
+        
+        cli._set_set_code(123)
+        self.assertRaises(Exception)
+    
+    def test_good_arguments(self):
+        cli = cli_util.CLIUtil()
+        ans = cli.validate_num_args(["app.py", "ons"])
+        self.assertIs(ans, True)
+    
+    def test_bad_arguments(self):
+        cli = cli_util.CLIUtil()
+        cli.validate_num_args(["app.py"])
+        self.assertRaises(Exception)
+        
+        cli.validate_num_args(["app.py", "ons", "lgn", "scg"])
+        self.assertRaises(Exception)
+        
         
 if __name__ == "__main__":
     unittest.main()

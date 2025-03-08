@@ -1,27 +1,15 @@
-from utils import cube_driver
+from utils import cube_driver, cli_util
+import sys
 
-c = cube_driver.CubeDriver('ons')
-for o in c.search_obj:
-    print(o)
-c.set_url(c.search_obj["next_page"])
-c.set_next_page_obj()
+cli = cli_util.CLIUtil()
 
+args = sys.argv
+cli.validate_num_args(args)
+set_code = args[1]
 
-'''has_more = obj["has_more"]
-print(obj["next_page"])
+cli.validate_set_code(set_code)
 
-total_cards = obj["total_cards"]
-cards_printed = 0
-
-
-for o in obj["data"]:
-    cards_printed += 1
-    print(o['name'])
-    
-if has_more == True:
-    # repeat
-    
-    print("we'll repeat")
-    print(f'we still have {total_cards - cards_printed}  cards to go')
-
-'''
+driver = cube_driver.CubeDriver(set_code)
+driver.add_all_cards()
+driver.write_csv()
+print("complete!")
