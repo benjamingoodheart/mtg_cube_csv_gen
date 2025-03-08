@@ -45,7 +45,7 @@ class TestsDriverTwo(unittest.TestCase):
         self.c.add_all_cards()
         self.c.write_csv()
         
-        with open('ons_cards.csv', newline='') as csvfile:
+        with open('./out/ons_cards.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             limit = 5
             cnt = 0

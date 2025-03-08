@@ -62,7 +62,7 @@ class CubeDriver:
         return 0
 
     def write_csv(self):
-        with open(f'{self.set_code.lower()}_cards.csv', 'w', newline='') as csvfile:
+        with open(f'./out/{self.set_code.lower()}_cards.csv', 'w', newline='') as csvfile:
             fieldnames = ['card_name', 'collector_num', 'colors', 'rarity', 'desired_qty', 'owned', 'qty_owned']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
