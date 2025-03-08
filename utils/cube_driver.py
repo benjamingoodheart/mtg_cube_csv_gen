@@ -1,5 +1,5 @@
-import requests
 import csv
+import requests # type: ignore
 
 class CubeDriver:
     def __init__(self, set_code)  -> None:

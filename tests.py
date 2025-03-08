@@ -1,7 +1,6 @@
 import unittest
-from utils import cube_driver, cli_util
+from utils import cube_driver, cli_util, exceptions
 import csv
-
 
 class TestDriver(unittest.TestCase):
     def test_driver(self):
@@ -56,6 +55,26 @@ class TestsDriverTwo(unittest.TestCase):
                 else:
                     pass
 
+class TestCustomExceptions(unittest.TestCase):
+    def test_too_few_exceptions(self):
+        e = exceptions.TooFewArgumentsError()
+        print(e.__str__())
+        self.assertRaises(e.__class__)
+    
+    def test_too_many_exceptions(self):
+        args = ['python3', 'app.py', 'scg', 'dft']
+        e = exceptions.TooManyArgumentsError(args)
+        print(e.__str__())
+        self.assertRaises(e.__class__)
+    
+    def test_set_length_error(self):
+        e = exceptions.SetCodeLengthError()
+        self.assertRaises(e.__class__)
+
+    def test_set_lookup_error(self):
+        e = exceptions.LookupSetError()
+        self.assertRaises(e.__class__)
+        
 class TestCLIUtil(unittest.TestCase):
     def test_good_set(self):
         cli = cli_util.CLIUtil()
@@ -69,7 +88,7 @@ class TestCLIUtil(unittest.TestCase):
         cli._set_set_code('a')
         self.assertRaises(Exception)
         
-        cli._set_set_code(123)
+        cli._set_set_code("123")
         self.assertRaises(Exception)
     
     def test_good_arguments(self):
@@ -79,12 +98,8 @@ class TestCLIUtil(unittest.TestCase):
     
     def test_bad_arguments(self):
         cli = cli_util.CLIUtil()
-        cli.validate_num_args(["app.py"])
-        self.assertRaises(Exception)
-        
-        cli.validate_num_args(["app.py", "ons", "lgn", "scg"])
-        self.assertRaises(Exception)
-        
-        
+        self.assertFalse( cli.validate_num_args(["app.py"]))
+        self.assertFalse( cli.validate_num_args(["app.py", "ons", "lgn", "scg"]))
+
 if __name__ == "__main__":
     unittest.main()

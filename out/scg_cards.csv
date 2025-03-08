@@ -1,0 +1,144 @@
+card_name,collector_num,colors,rarity,desired_qty,owned,qty_owned
+Ageless Sentinels,1,['W'],rare,1,N,0
+Astral Steel,2,['W'],common,4,N,0
+Aven Farseer,3,['W'],common,4,N,0
+Aven Liberator,4,['W'],common,4,N,0
+Daru Spiritualist,5,['W'],common,4,N,0
+Daru Warchief,6,['W'],uncommon,3,N,0
+Dawn Elemental,7,['W'],rare,1,N,0
+Decree of Justice,8,['W'],rare,1,N,0
+Dimensional Breach,9,['W'],rare,1,N,0
+Dragon Scales,10,['W'],common,4,N,0
+Dragonstalker,11,['W'],uncommon,3,N,0
+Eternal Dragon,12,['W'],rare,1,N,0
+Exiled Doomsayer,13,['W'],rare,1,N,0
+Force Bubble,14,['W'],rare,1,N,0
+Frontline Strategist,15,['W'],common,4,N,0
+Gilded Light,16,['W'],uncommon,3,N,0
+Guilty Conscience,17,['W'],common,4,N,0
+Karona's Zealot,18,['W'],uncommon,3,N,0
+Noble Templar,19,['W'],common,4,N,0
+Rain of Blades,20,['W'],uncommon,3,N,0
+Recuperate,21,['W'],common,4,N,0
+Reward the Faithful,22,['W'],uncommon,3,N,0
+Silver Knight,23,['W'],uncommon,3,N,0
+Trap Digger,24,['W'],rare,1,N,0
+Wing Shards,25,['W'],uncommon,3,N,0
+Wipe Clean,26,['W'],common,4,N,0
+Zealous Inquisitor,27,['W'],common,4,N,0
+Aphetto Runecaster,28,['U'],uncommon,3,N,0
+Brain Freeze,29,['U'],uncommon,3,N,0
+Coast Watcher,30,['U'],common,4,N,0
+Day of the Dragons,31,['U'],rare,1,N,0
+Decree of Silence,32,['U'],rare,1,N,0
+Dispersal Shield,33,['U'],common,4,N,0
+Dragon Wings,34,['U'],common,4,N,0
+Faces of the Past,35,['U'],rare,1,N,0
+Frozen Solid,36,['U'],common,4,N,0
+Hindering Touch,37,['U'],common,4,N,0
+Long-Term Plans,38,['U'],uncommon,3,N,0
+Mercurial Kite,39,['U'],common,4,N,0
+Metamorphose,40,['U'],uncommon,3,N,0
+Mind's Desire,41,['U'],rare,1,N,0
+Mischievous Quanar,42,['U'],rare,1,N,0
+Mistform Warchief,43,['U'],uncommon,3,N,0
+Parallel Thoughts,44,['U'],rare,1,N,0
+Pemmin's Aura,45,['U'],uncommon,3,N,0
+Raven Guild Initiate,46,['U'],common,4,N,0
+Raven Guild Master,47,['U'],rare,1,N,0
+Riptide Survivor,48,['U'],uncommon,3,N,0
+Rush of Knowledge,49,['U'],common,4,N,0
+Scornful Egotist,50,['U'],common,4,N,0
+Shoreline Ranger,51,['U'],common,4,N,0
+Stifle,52,['U'],rare,1,N,0
+Temporal Fissure,53,['U'],common,4,N,0
+Thundercloud Elemental,54,['U'],uncommon,3,N,0
+Bladewing's Thrall,55,['B'],uncommon,3,N,0
+Cabal Conditioning,56,['B'],rare,1,N,0
+Cabal Interrogator,57,['B'],uncommon,3,N,0
+Call to the Grave,58,['B'],rare,1,N,0
+Carrion Feeder,59,['B'],common,4,N,0
+Chill Haunting,60,['B'],uncommon,3,N,0
+Clutch of Undeath,61,['B'],common,4,N,0
+Consumptive Goo,62,['B'],rare,1,N,0
+Death's-Head Buzzard,63,['B'],common,4,N,0
+Decree of Pain,64,['B'],rare,1,N,0
+Dragon Shadow,65,['B'],common,4,N,0
+Fatal Mutation,66,['B'],uncommon,3,N,0
+Final Punishment,67,['B'],rare,1,N,0
+Lethal Vapors,68,['B'],rare,1,N,0
+Lingering Death,69,['B'],common,4,N,0
+Nefashu,70,['B'],rare,1,N,0
+Putrid Raptor,71,['B'],uncommon,3,N,0
+Reaping the Graves,72,['B'],common,4,N,0
+Skulltap,73,['B'],common,4,N,0
+Soul Collector,74,['B'],rare,1,N,0
+Tendrils of Agony,75,['B'],uncommon,3,N,0
+Twisted Abomination,76,['B'],common,4,N,0
+Unburden,77,['B'],common,4,N,0
+Undead Warchief,78,['B'],uncommon,3,N,0
+Unspeakable Symbol,79,['B'],uncommon,3,N,0
+Vengeful Dead,80,['B'],common,4,N,0
+Zombie Cutthroat,81,['B'],common,4,N,0
+Bonethorn Valesk,82,['R'],common,4,N,0
+Carbonize,83,['R'],uncommon,3,N,0
+Chartooth Cougar,84,['R'],common,4,N,0
+Decree of Annihilation,85,['R'],rare,1,N,0
+Dragon Breath,86,['R'],common,4,N,0
+Dragon Mage,87,['R'],rare,1,N,0
+Dragon Tyrant,88,['R'],rare,1,N,0
+Dragonspeaker Shaman,89,['R'],uncommon,3,N,0
+Dragonstorm,90,['R'],rare,1,N,0
+Enrage,91,['R'],uncommon,3,N,0
+Extra Arms,92,['R'],uncommon,3,N,0
+Form of the Dragon,93,['R'],rare,1,N,0
+Goblin Brigand,94,['R'],common,4,N,0
+Goblin Psychopath,95,['R'],uncommon,3,N,0
+Goblin War Strike,96,['R'],common,4,N,0
+Goblin Warchief,97,['R'],uncommon,3,N,0
+Grip of Chaos,98,['R'],rare,1,N,0
+Misguided Rage,99,['R'],common,4,N,0
+Pyrostatic Pillar,100,['R'],uncommon,3,N,0
+Rock Jockey,101,['R'],common,4,N,0
+Scattershot,102,['R'],common,4,N,0
+Siege-Gang Commander,103,['R'],rare,1,N,0
+Skirk Volcanist,104,['R'],uncommon,3,N,0
+Spark Spray,105,['R'],common,4,N,0
+Sulfuric Vortex,106,['R'],rare,1,N,0
+Torrent of Fire,107,['R'],common,4,N,0
+Uncontrolled Infestation,108,['R'],common,4,N,0
+Accelerated Mutation,109,['G'],common,4,N,0
+Alpha Status,110,['G'],uncommon,3,N,0
+Ambush Commander,111,['G'],rare,1,N,0
+Ancient Ooze,112,['G'],rare,1,N,0
+Break Asunder,113,['G'],common,4,N,0
+Claws of Wirewood,114,['G'],uncommon,3,N,0
+Decree of Savagery,115,['G'],rare,1,N,0
+Divergent Growth,116,['G'],common,4,N,0
+Dragon Fangs,117,['G'],common,4,N,0
+Elvish Aberration,118,['G'],uncommon,3,N,0
+Fierce Empath,119,['G'],common,4,N,0
+Forgotten Ancient,120,['G'],rare,1,N,0
+Hunting Pack,121,['G'],uncommon,3,N,0
+Krosan Drover,122,['G'],common,4,N,0
+Krosan Warchief,123,['G'],uncommon,3,N,0
+Kurgadon,124,['G'],uncommon,3,N,0
+One with Nature,125,['G'],uncommon,3,N,0
+Primitive Etchings,126,['G'],rare,1,N,0
+Root Elemental,127,['G'],rare,1,N,0
+Sprouting Vines,128,['G'],common,4,N,0
+Titanic Bulvox,129,['G'],common,4,N,0
+Treetop Scout,130,['G'],common,4,N,0
+Upwelling,131,['G'],rare,1,N,0
+Wirewood Guardian,132,['G'],common,4,N,0
+Wirewood Symbiote,133,['G'],uncommon,3,N,0
+Woodcloaker,134,['G'],common,4,N,0
+Xantid Swarm,135,['G'],rare,1,N,0
+Bladewing the Risen,136,"['B', 'R']",rare,1,N,0
+Edgewalker,137,"['B', 'W']",uncommon,3,N,0
+"Karona, False God",138,"['B', 'G', 'R', 'U', 'W']",rare,1,N,0
+Sliver Overlord,139,"['B', 'G', 'R', 'U', 'W']",rare,1,N,0
+Ark of Blight,140,['C'],uncommon,3,N,0
+Proteus Machine,141,['C'],uncommon,3,N,0
+Stabilizer,142,['C'],rare,1,N,0
+Temple of the False God,143,['C'],uncommon,3,N,0
