@@ -132,7 +132,7 @@ class CubeDriver:
                     'collector_num': card["collector_num"],
                     'colors' : card["colors"],
                     'rarity': card["rarity"],
-                    'desired_qty' : self.calc_desired_qty(card["rarity"]),
+                    'desired_qty' : 1,
                     'owned': 'N', #defaults to no
                     'qty_owned': 0,
                 })
