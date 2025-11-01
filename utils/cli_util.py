@@ -1,5 +1,6 @@
 import requests
 from utils.exceptions import LookupSetError, SetCodeLengthError
+from utils.flags import Flags
 
 class CLIUtil:
     """
@@ -7,7 +8,19 @@ class CLIUtil:
     """
     def __init__(self):
         self.set_code = ''
+        self.expected_num_of_args = 2
+        self.f = Flags()
 
+    def count_args(self, args:list)-> int:
+        return len(args)
+
+    def has_flags(self, args:list)->bool:
+        flag_list = self.f.get_flags()
+        for arg in args:
+            if arg in flag_list:
+                return True
+        return False
+        
     def validate_num_args(self, args: str)->bool:
         return len(args) == 2
 
@@ -32,3 +45,6 @@ class CLIUtil:
     def _set_set_code(self, set_code):
         self.validate_set_code(set_code)
         self.set_code = set_code
+        
+    def _set_expected_num_of_args(self, num:int) -> None:
+        self.expected_num_of_args = num
