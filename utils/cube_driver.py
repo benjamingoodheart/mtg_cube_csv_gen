@@ -111,7 +111,7 @@ class CubeDriver:
             return 1
         return 0
 
-    def write_csv(self)-> None:
+    def write_csv(self, *flags)-> None:
         """
         builds and outputs a .csv file
         """
@@ -127,7 +127,7 @@ class CubeDriver:
 
             writer.writeheader()
             for card in self.cards:
-                writer.writerow({
+                row_obj ={
                     'card_name': card["card_name"],
                     'collector_num': card["collector_num"],
                     'colors' : card["colors"],
@@ -135,4 +135,8 @@ class CubeDriver:
                     'desired_qty' : 1,
                     'owned': 'N', #defaults to no
                     'qty_owned': 0,
-                })
+                }
+                if '-r' in flags:
+                        row_obj['desired_qty'] = self.calc_desired_qty(card["rarity"])
+                        
+                writer.writerow(row_obj)

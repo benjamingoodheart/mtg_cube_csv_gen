@@ -8,8 +8,8 @@ class CLIUtil:
     """
     def __init__(self):
         self.set_code = ''
-        self.expected_num_of_args = 2
         self.f = Flags()
+        self.options = []
 
     def count_args(self, args:list)-> int:
         return len(args)
@@ -22,7 +22,7 @@ class CLIUtil:
         return False
         
     def validate_num_args(self, args: str)->bool:
-        return len(args) == 2
+        return len(args) >= 2
 
     def validate_set_code(self, set_code: str)-> bool:
         try:
@@ -46,5 +46,18 @@ class CLIUtil:
         self.validate_set_code(set_code)
         self.set_code = set_code
         
-    def _set_expected_num_of_args(self, num:int) -> None:
-        self.expected_num_of_args = num
+    def get_options(self)->list:
+        return self.options
+        
+    def set_options(self, options:list)-> None:
+        for option in options:
+            if option == '-r':
+                self.options.append('-r')
+            if option == '-cq':
+                ## validate flag paramenter
+                pass
+            if option == '-e':
+                ## validate flag parameter
+                pass
+        
+        
