@@ -54,8 +54,8 @@ class CLIUtil:
             if option == '-r':
                 self.options.append('-r')
             if option == '-cq':
-                ## validate flag paramenter
-                pass
+                self.options.append('-cq')
+                self.options.append(options[options.index('-cq')+1])
             if option == '-e':
                 ## validate flag parameter
                 pass

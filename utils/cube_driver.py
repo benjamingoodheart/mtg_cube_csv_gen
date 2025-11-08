@@ -138,5 +138,8 @@ class CubeDriver:
                 }
                 if '-r' in flags:
                         row_obj['desired_qty'] = self.calc_desired_qty(card["rarity"])
-                        
+                #TODO: handle exception if -r and -cq both in flags
+                if '-cq' in flags:
+                    flag_list = list(flags)
+                    row_obj['desired_qty'] = flag_list[flag_list.index('-cq')+1]                      
                 writer.writerow(row_obj)
