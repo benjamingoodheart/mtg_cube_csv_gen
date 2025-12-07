@@ -142,12 +142,10 @@ class CubeDriver:
                 if '-cq' in flags:
                     flag_list = list(flags)
                     row_obj['desired_qty'] = flag_list[flag_list.index('-cq')+1]
-                #TODO: FINISH / USE E_INDEX AND OTHER INDEXES TO 'BOOKEND'
                 if '-e' in flags:
                     flag_list = list(flags)
                     
                     if card["collector_num"] not in flag_list:
                       writer.writerow(row_obj)
-                      
                 else:
                     writer.writerow(row_obj)
