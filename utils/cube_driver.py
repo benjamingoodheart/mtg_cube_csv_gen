@@ -124,7 +124,7 @@ class CubeDriver:
                 'owned', 
                 'qty_owned']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
+            print(flags)
             writer.writeheader()
             for card in self.cards:
                 row_obj ={
@@ -141,5 +141,13 @@ class CubeDriver:
                 #TODO: handle exception if -r and -cq both in flags
                 if '-cq' in flags:
                     flag_list = list(flags)
-                    row_obj['desired_qty'] = flag_list[flag_list.index('-cq')+1]                      
-                writer.writerow(row_obj)
+                    row_obj['desired_qty'] = flag_list[flag_list.index('-cq')+1]
+                #TODO: FINISH / USE E_INDEX AND OTHER INDEXES TO 'BOOKEND'
+                if '-e' in flags:
+                    flag_list = list(flags)
+                    
+                    if card["collector_num"] not in flag_list:
+                      writer.writerow(row_obj)
+                      
+                else:
+                    writer.writerow(row_obj)

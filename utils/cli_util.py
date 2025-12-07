@@ -57,7 +57,10 @@ class CLIUtil:
                 self.options.append('-cq')
                 self.options.append(options[options.index('-cq')+1])
             if option == '-e':
-                ## validate flag parameter
-                pass
-        
-        
+                e_index = options.index('-e')
+                for i, option in enumerate(options):
+                    if option in ('-r', '-cq'):
+                        break
+                    #only append the number once
+                    if option not in self.options and i >= e_index:
+                        self.options.append(option)
