@@ -3,6 +3,8 @@ Cube Driver module
 """
 import csv
 import requests # type: ignore
+import sys
+from utils.exceptions import NoCustomQuantityError
 
 class CubeDriver:
     """
@@ -127,6 +129,7 @@ class CubeDriver:
             print(flags)
             writer.writeheader()
             for card in self.cards:
+                
                 row_obj ={
                     'card_name': card["card_name"],
                     'collector_num': card["collector_num"],
@@ -138,13 +141,11 @@ class CubeDriver:
                 }
                 if '-r' in flags:
                         row_obj['desired_qty'] = self.calc_desired_qty(card["rarity"])
-                #TODO: handle exception if -r and -cq both in flags
                 if '-cq' in flags:
                     flag_list = list(flags)
                     row_obj['desired_qty'] = flag_list[flag_list.index('-cq')+1]
                 if '-e' in flags:
                     flag_list = list(flags)
-                    
                     if card["collector_num"] not in flag_list:
                       writer.writerow(row_obj)
                 else:

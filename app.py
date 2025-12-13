@@ -1,13 +1,13 @@
 import sys
 from utils import cube_driver, cli_util
-from utils.exceptions import TooFewArgumentsError, TooManyArgumentsError
-
+from utils.exceptions import TooFewArgumentsError, ConflictingFlagsError
 cli = cli_util.CLIUtil()
 
 try:
     args = sys.argv
     SET_CODE = ''
-    
+    if '-cq' and '-r' in args:
+        raise ConflictingFlagsError
     if cli.validate_num_args(args) is True:
         SET_CODE = args[1]
         if cli.has_flags(args) is True:
@@ -17,8 +17,11 @@ try:
             raise TooFewArgumentsError
 except TooFewArgumentsError as e:
     print(e)
-except TooManyArgumentsError as e:
+    sys.exit()
+except ConflictingFlagsError as e:
     print(e)
+    sys.exit()
+
 
 if cli.validate_set_code(SET_CODE) is True:
     driver = cube_driver.CubeDriver(SET_CODE)

@@ -7,18 +7,7 @@ class TooFewArgumentsError(Exception):
 
     def __str__(self):
         return f'{self.msg}'
-
-class TooManyArgumentsError(Exception):
-    def __init__(self, args):
-        self.msg = """
-        Error! Agh! You passed too many arguments. 
-        Only pass one after app.py ie. `python3 app.py ONS"""
-        self.args = args
-        super().__init__(self.args)
-
-    def __str__(self):
-        return f'{self.args} -> {self.msg}'
-
+        
 class SetCodeLengthError(Exception):
     def __init__(self,):
         self.msg = "Error! Set Code Must Be Exaclty 3 Characters ie SCG "
@@ -32,5 +21,21 @@ class LookupSetError(Exception):
         self.msg = "Error! Could not locate set on scryfall"
         super().__init__()
 
+    def __str__(self):
+        return f'{self.msg}'
+
+class ConflictingFlagsError(Exception):
+    def __init__(self):
+        self.msg = "Error! You cannot use -r and -cq in the same command. Please only use one of those flags"
+        super().__init__()
+    
+    def __str__(self):
+        return f'{self.msg}'
+    
+class NoCustomQuantityError(Exception):
+    def __init__(self):
+        self.msg = "Error! You did not pass a quantity after the -cq flag. Try something like `python3 app.py LGN -cq 4`"
+        super().__init__()
+    
     def __str__(self):
         return f'{self.msg}'

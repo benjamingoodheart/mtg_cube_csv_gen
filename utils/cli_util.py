@@ -1,5 +1,6 @@
 import requests
-from utils.exceptions import LookupSetError, SetCodeLengthError
+import sys
+from utils.exceptions import LookupSetError, SetCodeLengthError, NoCustomQuantityError
 from utils.flags import Flags
 
 class CLIUtil:
@@ -50,17 +51,23 @@ class CLIUtil:
         return self.options
         
     def set_options(self, options:list)-> None:
-        for option in options:
-            if option == '-r':
-                self.options.append('-r')
-            if option == '-cq':
-                self.options.append('-cq')
-                self.options.append(options[options.index('-cq')+1])
-            if option == '-e':
-                e_index = options.index('-e')
-                for i, option in enumerate(options):
-                    if option in ('-r', '-cq'):
-                        break
-                    #only append the number once
-                    if option not in self.options and i >= e_index:
-                        self.options.append(option)
+        try:
+            for option in options:
+                if option == '-r':
+                    self.options.append('-r')
+                if option == '-cq':
+                    self.options.append('-cq')
+                    if options[-1]=='-cq' or options[options.index('-cq')+1]== '-e':
+                        raise NoCustomQuantityError
+                    self.options.append(options[options.index('-cq')+1])
+                if option == '-e':
+                    e_index = options.index('-e')
+                    for i, option in enumerate(options):
+                        if option in ('-r', '-cq'):
+                            break
+                        #only append the number once
+                        if option not in self.options and i >= e_index:
+                            self.options.append(option)
+        except NoCustomQuantityError as e:
+            print(e)
+            sys.exit()

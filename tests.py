@@ -54,14 +54,11 @@ class TestsDriverTwo(unittest.TestCase):
                 else:
                     pass
 
+
+    
 class TestCustomExceptions(unittest.TestCase):
     def test_too_few_exceptions(self):
         e = exceptions.TooFewArgumentsError()
-        self.assertRaises(e.__class__)
-
-    def test_too_many_exceptions(self):
-        args = ['python3', 'app.py', 'scg', 'dft']
-        e = exceptions.TooManyArgumentsError(args)
         self.assertRaises(e.__class__)
 
     def test_set_length_error(self):
