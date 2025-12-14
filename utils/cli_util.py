@@ -1,5 +1,6 @@
 import requests
 import sys
+import re
 from utils.exceptions import LookupSetError, SetCodeLengthError, NoCustomQuantityError
 from utils.flags import Flags
 
@@ -22,8 +23,35 @@ class CLIUtil:
                 return True
         return False
         
-    def validate_num_args(self, args: str)->bool:
+    def validate_num_args(self, args: list)->bool:
         return len(args) >= 2
+
+    def validate_args(self, args:list)->bool:
+        if args[2] not in ['-r', '-cq', '-e']:
+            return False
+        if args in ['-r', '-cq']:
+            return False
+        if args[2] == '-cq':
+            if args[3] is None:
+                return False
+            if args[3]:
+                reg = re.findall(r"\d", args[3])
+                if len(reg) == 0:
+                    return False
+        if args[2] == '-r':
+            if len(args) >= 4:
+                if args[3] is not None:
+                    return False
+        if args[2] == '-e':
+            if len(args) < 4:
+                return False
+            if args[3] == '-cq' or args[3] == '-r':
+                return False
+            if len(args) >=4:
+                reg = re.findall(r"\d", args[3])
+                if len(reg) == 0:
+                    return False                
+        return True
 
     def validate_set_code(self, set_code: str)-> bool:
         try:

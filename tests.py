@@ -1,5 +1,6 @@
 import unittest
 import csv
+import re
 from utils import cube_driver, cli_util, exceptions
 
 class TestDriver(unittest.TestCase):
@@ -89,11 +90,41 @@ class TestCLIUtil(unittest.TestCase):
         cli = cli_util.CLIUtil()
         ans = cli.validate_num_args(["app.py", "ons"])
         self.assertIs(ans, True)
+    
+    def test_good_arguments_cq(self):
+        cli = cli_util.CLIUtil()
+        self.assertTrue(cli.validate_args(["app.py", "ons", "-cq", "123"]))
+        
+    def test_good_arguments_r(self):
+        cli = cli_util.CLIUtil()
+        self.assertTrue(cli.validate_args(["app.py", "ons", "-r"]))    
+    
+    def test_good_arguments_e(self):
+        cli = cli_util.CLIUtil()
+        self.assertTrue(cli.validate_args(["app.py", "ons", "-e", "123"]))    
 
     def test_bad_arguments(self):
         cli = cli_util.CLIUtil()
         self.assertFalse( cli.validate_num_args(["app.py"]))
-        self.assertFalse( cli.validate_num_args(["app.py", "ons", "lgn", "scg"]))
+        self.assertFalse( cli.validate_args(["app.py", "ons", "lgn", "scg"]))
+    
+    def test_bad_arguments_cq(self):
+        cli = cli_util.CLIUtil()
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-cq", "abc"]))
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-cq", "-r"]))
+    
+    def test_bad_arguments_r(self):
+        cli = cli_util.CLIUtil()
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-r", "123"]))
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-r", "abc"]))
+    
+    def test_bad_arguments_e (self):
+        cli = cli_util.CLIUtil()
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-e", "abv"]))
+        self.assertFalse( cli.validate_args(["app.py", "ons", "-e"]))
+        
+
+
 
 if __name__ == "__main__":
     unittest.main()
