@@ -1,4 +1,6 @@
 class Flags:
+    """Helper utilities for flags
+    """
     def __init__(self)-> None:
         self.flags = [
             '-r', # Rarity <no args>

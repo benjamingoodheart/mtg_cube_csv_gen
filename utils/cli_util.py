@@ -8,7 +8,7 @@ class CLIUtil:
     """
     Helper utility for CLI validations
     """
-    def __init__(self):
+    def __init__(self)->None:
         self.set_code = ''
         self.f = Flags()
         self.options = []
@@ -24,9 +24,26 @@ class CLIUtil:
         return False
         
     def validate_num_args(self, args: list)->bool:
+        """
+
+        Args:
+            args (list): a list of values
+
+        Returns:
+            bool: True if the length of the argument is greater or equal to 2.
+        """
         return len(args) >= 2
 
+
     def validate_args(self, args:list)->bool:
+        """
+        Validates arguments passed in command line
+        Args:
+            args (list): < "-r" | "-cq" | "-e" >
+
+        Returns:
+            bool: True if the arguments are valid
+        """
         if args[2] not in ['-r', '-cq', '-e']:
             return False
         if args in ['-r', '-cq']:
@@ -54,6 +71,18 @@ class CLIUtil:
         return True
 
     def validate_set_code(self, set_code: str)-> bool:
+        """
+        Ensures the passed set code is valid. 
+        Args:
+            set_code (str): A three letter string denoting a magic set. 
+
+        Raises:
+            SetCodeLengthError: The set code is the wrong length. 
+            LookupSetError: The set code does not exist.
+
+        Returns:
+            bool: True if the set code exists. 
+        """
         try:
             if (len(set_code) == 3) is False:
                 raise SetCodeLengthError
@@ -71,14 +100,32 @@ class CLIUtil:
             print(e)
         return True
 
-    def _set_set_code(self, set_code):
+    def _set_set_code(self, set_code: str)-> None:
+        """ Records the setcode in the internal memory.
+        
+        Args:
+            set_code (str): A three letter set code denoting the MTG set.
+        """
         self.validate_set_code(set_code)
         self.set_code = set_code
         
     def get_options(self)->list:
+        """
+        Returns:
+            list: a list of options
+        """
         return self.options
-        
+    
+    
     def set_options(self, options:list)-> None:
+        """Set the internal option parameters
+
+        Args:
+            options (list): a list of options
+
+        Raises:
+            NoCustomQuantityError
+        """
         try:
             for option in options:
                 if option == '-r':
